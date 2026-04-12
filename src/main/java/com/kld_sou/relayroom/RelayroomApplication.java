@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProjTempApplication {
+public class RelayroomApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(ProjTempApplication.class, args);
+    SpringApplication.run(RelayroomApplication.class, args);
   }
 }
