@@ -16,6 +16,9 @@ public class CorsConfig implements WebMvcConfigurer {
         .addMapping("/api/**")
         // do note that setAllowedOrigin breaks SockJS
         .allowedOriginPatterns(allowedOrigins)
-        .allowedMethods("GET", "PUT");
+        .allowedMethods("GET", "PUT", "POST", "DELETE",
+                        "OPTIONS")
+        .allowedHeaders("*") // Allows browser to send Content-Type headers
+        .allowCredentials(true);
   }
 }
